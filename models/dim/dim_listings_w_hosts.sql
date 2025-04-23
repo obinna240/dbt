@@ -1,4 +1,4 @@
-with 
+with
 l as (
     select * from {{ ref("dim_listings_cleansed")}}
 ),
