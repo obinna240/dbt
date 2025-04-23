@@ -11,16 +11,16 @@ WITH src_reviews as (
 )
 select 
     listing_id,
-    date as review_date,
+    date,
     reviewer_name,
-    comments as review_text,
+    comments,
     sentiment
 from 
     src_reviews
 where 
     comments is not null
     {% if is_incremental() %}
-        AND review_date > (select max(review_date) from {{ this }})
+        AND date > (select max(date) from {{ this }})
     {% endif %}
 
 
