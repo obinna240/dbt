@@ -13,3 +13,16 @@ Try running the following commands:
 - Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
 - Find [dbt events](https://events.getdbt.com) near you
 - Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+
+### Commands:
+- Run dbt
+dbt run
+
+- Full refresh - forces re-creation of models
+dbt run --full-refresh 
+
+- inserts for tests
+insert into `airbnb.reviewss`  values( 3176, CURRENT_TIMESTAMP(), "Simon", "Great place - loved it", "positive" )
+
+- Load seeds into BQ
+dbt seed
