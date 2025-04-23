@@ -1,15 +1,11 @@
-with raw_listings AS
+with raw_reviews AS
 (
-    select * from `compute-1-367804.airbnb.listingss`
+    select * from `compute-1-367804.airbnb.reviewss`
 )
 SELECT
-  id as listing_id,
-  name as listing_name,
-  listing_url,
-  room_type,
-  minimum_nights,
-  host_id,
-  price as price_str,
-  created_at,
-  updated_at
-from raw_listings
+  listing_id,
+  date,
+  reviewer_name,
+  comments,
+  sentiment
+from raw_reviews
