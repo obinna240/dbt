@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: airbnb_project
+    schema: airbnb
+    tables:
+      - name: listings
+        identifier: listingss
+      - name: hosts
+        identifier: hostss
+      - name: reviews
+        identifier: reviewss

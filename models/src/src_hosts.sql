@@ -1,6 +1,6 @@
 with raw_hosts AS
 (
-    select * from `compute-1-367804.airbnb.hostss`
+    select * from {{ source('airbnb_project', 'hosts') }}
 )
 SELECT
   id as host_id,
