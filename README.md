@@ -29,3 +29,6 @@ dbt seed
 
 - Compile and check references and sources
 dbt compile
+
+- For freshness checks use
+dbt source freshness
