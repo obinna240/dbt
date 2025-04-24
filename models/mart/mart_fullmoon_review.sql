@@ -15,5 +15,14 @@ full_moon_dates as
 select
     r.*,
     CASE
-        WHEN 
+        WHEN fm.full_moon_date IS NULL THEN 'not full moon'
+        ELSE 'full moon'
+    END AS is_full_moon
+FROM
+    fct_reviews r
+LEFT JOIN 
+    full_moon_dates fm
+ON DATE(r.date) = DATE_ADD(fm.full_moon_date, INTERVAL 1 DAY)
+
+
 
