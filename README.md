@@ -35,3 +35,6 @@ dbt source freshness
 
 - To create snapshots
 dbt snapshot
+
+- Testing
+use `dbt test` or do `dbt test --select name_of_test`
