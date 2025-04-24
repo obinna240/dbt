@@ -1,6 +1,6 @@
 with raw_listings AS
 (
-    select * from `compute-1-367804.airbnb.listingss`
+    select * from {{ source('airbnb_project', 'listings') }}
 )
 SELECT  
   id as listing_id,
