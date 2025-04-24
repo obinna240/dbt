@@ -26,3 +26,6 @@ insert into `airbnb.reviewss`  values( 3176, CURRENT_TIMESTAMP(), "Simon", "Grea
 
 - Load seeds into BQ
 dbt seed
+
+- Compile and check references and sources
+dbt compile
