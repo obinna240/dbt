@@ -32,3 +32,6 @@ dbt compile
 
 - For freshness checks use
 dbt source freshness
+
+- To create snapshots
+dbt snapshot
