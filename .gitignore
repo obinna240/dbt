@@ -3,5 +3,6 @@ target/
 dbt_packages/
 logs/
 .idea/
+package-lock.yml
 
 

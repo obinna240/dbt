@@ -38,3 +38,6 @@ dbt snapshot
 
 - Testing
 use `dbt test` or do `dbt test --select name_of_test`
+
+Running dbt expectations:
+`dbt test --select dim_listings_w_hosts`

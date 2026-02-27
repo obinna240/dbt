@@ -2,6 +2,15 @@ version: 2
 
 models:
 
+  - name: dim_listings_w_hosts
+    columns:
+      - name: room_type
+        tests:
+          - dbt_expectations.expect_column_to_exist
+
+
+
+
   - name: dim_listings_cleansed
     columns:
       - name: listing_id
@@ -23,6 +32,10 @@ models:
               'Private room',
               'Shared room',
               'Hotel room']
+
+
+
+    
 
 
 
