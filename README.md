@@ -41,3 +41,7 @@ use `dbt test` or do `dbt test --select name_of_test`
 
 Running dbt expectations:
 `dbt test --select dim_listings_w_hosts`
+
+We can run expectations on sources by doing: `dbt test --select source:airbnb_project.listings` because this is a source
+
+To run the macro we use `dbt run-operation logger`
